@@ -10,50 +10,103 @@
 	<title>Margaret Cook | Websites & Web Apps</title>
 	
 	<link rel="stylesheet" href="style.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="nav.js"></script>
+	
 </head>
 
 <body>
+	
 	<header>
-		<div class="container">
-			<div id="name">
-				<h1>Margaret Cook</h1>
-			</div>
-			
-			<nav>
-				<ul>
-					<li><a href="https://margaretkcook.github.io/margaretCook/index">Home</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="portfolio.html"><b>Portfolio</b></a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <nav>
+      <div class="name">
+        <a href="index.html">MARGARET COOK</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="resume.html"> Resume </a>
+        <div class="dropdown">
+          <a class="drop-area" href="portfolio.html"><b>Portfolio</b></a>
+          <div class="dropdown-content">
+            <a href="uxhfe.html"> Human Factors & User Experience </a>
+            <a href="VRDev.html"> VR Development </a>
+			<a href="websites.html"><b>Software & Web Development</b></a>
+          </div>
+        </div>
+      </div>
+      <div class="burger" id="lines">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="index.html" class="close-nav"> Home </a>
+    <a href="resume.html" class="close-nav"> Resume </a>
+    <a class="side-drop-btn" href="#">
+		<b>Portfolio</b>
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+	  <a href="portfolio.html" class="close-nav"> Portfolio Home </a>
+      <a href="uxhfe.html" class="close-nav"> Human Factors & User Experience </a>
+      <a href="VRDev.html" class="close-nav"> VR Development </a>
+	  <a href="websites.html" class="close-nav"><b>Software & Web Development</b></a>
+    </div>
+  </div>
+	
 	<div class="container">
+		<br>
 		<h1>Websites & Web Apps</h1>
+		<br>
 		<p><b>Overview</b><br><br>I started learning to create websites this fall, and since, I have created a few different websites and programs, all of which are mobile responsive.</p>
 		
+		<br>
 		<h2>NextWatch</h2>
+		<br>
 		<img src="nextwatch.png" width="100%">
+		<br><br>
 		<p><a href = "http://nextwatch.herokuapp.com" target="_blank">NextWatch</a> is a web app that recommends movies to users that they can add to a watchlist which is saved to their account. This web app used The Movie Database to access data on genres and actors in movies. I worked with a team to create this app, with the aim of creating a usable interface for customers to save their favorite movies and films that they look forward to watching.</p>
+		<br>
 		<img src = "nextwatch_add.png" width="100%">
+		<br><br>
 		<p>I was in charge of the overal design of the website as well as project management. I worked to create the logos as well as how the functionality can be easily understood. The website is meant to offer enough information that the user does not feel overwelmed, and it only takes the click of one button to add a movie to one's watchlist, which is shown above.</p>
+		<br>
 		<img src = "nextwatch_search.png" width = "100%">
+		<br><br>
 		<p>In NextWatch you can either search for movies based on mood or on actors to find recommendations. The search above displays a search under the mood "When You Need to Laugh", which is circled in red. By having these two options, the webapp aims to recommend new movies that users have not seen based on a specific mood or actor. </p>
+		<br>
 		
 		<h2>Jumbo Express</h2>
+		<br>
 		<img src="jumboExpressHome.png" width="100%">
+		<br><br>
 		<p><a href="https://tnunez01.github.io/jumboexpress/index.html" target="_blank">Jumbo Express</a> is a site created as a mobile and web ordering platform for a ficticious restaurant. I created this website with a team using JavaScript, HTML, CSS, and jQuery, and our goal was to provide a usable interface for customers to order takeout and delivery during the COVID-19 pandemic. We adhered to Norman and Neilsen's 15 Usability Heuristics to keep all information easy to access and understand. We also focused on breaking information up, so none of it was presented in large chunks that would overwelm visitors to the site.</p>
+		<br>
 		<p>I was in charge of the visual design for this site, and I created all of the logos and mock-ups for the site's creation. I created all logos and graphics on Adobe Illustrator. The elephant logo shown below on the menu page was designed with Tuft's mascot, Jumbo, in mind. I added the mask, since this restaurant was created with social distancing in mind. I selected a color scheme of warm orange and yellow tones that are not overbearing, and I used accents of Tuft's blue for continuity with Jumbo. Overall, the website was created to be a straightforward platform that is mobile responsive. </p>
+		<br>
 		<img src="jumboExpressMenu2.png" width="100%">
+		<br><br>
 		<p>Above is the daytime menu, which provides descriptions and images of the items that people can order. They are also listed on the delivery page, but we wanted to offer a menu tab with more detail on the food.</p>
+		<br>
 			
 		<h2>This Website</h2>
+		<br>
 		<img src="portfolioMobile.png" width="100%">
+		<br><br>
 		<p><a href="index.html" target="_blank">This website</a> is my most recent. It was created from scratch as a platform for me to share my work and resume. I also utilized my skills in Adobe Illustrator and Adobe Photoshop to create the graphics for this site.I started with a general idea of wanting to let people understand my experiences and expertise, so the purpose of this page is to convey this.<br><br>My first priority in making this website was to make it easy to follow nd simple to understand. Thus, it is very straightforward and features a plain, sleak design, so the content really stands out. I stuck with a clean color scheme and straightforward page layout. I also stuck with shorter paragraphs, so people are not overwelmed with text. <br><br> I also made this website mobile-friendly, so it can reach a wider array of people. To do this, I focused on making the horizontal desktop layout into a more vertical, stacked layout. </p>
+		<br>
 		
 		<h2>My First Website</h2>
+		<br>
 		<img src="firstSite.png" width="100%">
+		<br><br>
 		<p> <a href="https://margaretkcook.github.io/cookAssignment2/index.html" target="_blank">My first website</a>, though very basic, was designed as a food and lifestyle blog, which I used as a platform to master the fundamentals HTML/CSS and mobile design. While creating it, I emphasized simplicity and ease in navigation. <br><br></p>
+	
 	</div>
 
 	<footer>

@@ -31,7 +31,7 @@
 			padding: 0px 20px 0px 0px;
 		}
 		@media (max-width:768px) {
-			#data, #houseofQuality, #solutionLights, #solutionInforming{
+			#expectationsHypothesisEtc, #compAnalysis, #solutionLights, #solutionInforming{
 				display:block;
 			}
 			.leftText, .rightText{
@@ -39,61 +39,102 @@
 			}
 		}
 	</style>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="nav.js"></script>
+	
 </head>
 
 <body>
+	
 	<header>
-		<div class="container">
-			<div id="name">
-				<h1>Margaret Cook</h1>
-			</div>
-			
-			<nav>
-				<ul>
-					<li><a href="https://margaretkcook.github.io/margaretCook/index">Home</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="portfolio.html"><b>Portfolio</b></a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <nav>
+      <div class="name">
+        <a href="index.html">MARGARET COOK</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="resume.html"> Resume </a>
+        <div class="dropdown">
+          <a class="drop-area" href="portfolio.html"><b>Portfolio</b></a>
+          <div class="dropdown-content">
+			  <a href="uxhfe.html"><b>Human Factors & User Experience</b></a>
+            <a href="VRDev.html"> VR Development </a>
+			<a href="websites.html"> Software & Web Development</a>
+          </div>
+        </div>
+      </div>
+      <div class="burger" id="lines">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="index.html" class="close-nav"> Home </a>
+    <a href="resume.html" class="close-nav"> Resume </a>
+    <a class="side-drop-btn" href="#">
+      <b>Portfolio</b>
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+	  <a href="portfolio.html" class="close-nav"> Portfolio Home </a>
+		<a href="uxhfe.html" class="close-nav"><b>Human Factors & User Experience</b></a>
+      <a href="VRDev.html" class="close-nav"> VR Development </a>
+	  <a href="websites.html" class="close-nav"> Software & Web Development </a>
+    </div>
+  </div>
 	
 	<article id="engageliHumanli">
+		
 	<div class="container">
+		
+		<br>
+		<a href="index.html">Home</a> / <a href="portfolio.html">Portfolio</a> / <a href="uxhfe.html">Human Factors & User Experience</a> / <a href="engageli-humanli.html">Engageli-Humanli</a>
+		<br>
+		
+		<br>
 		<h1>Engageli-Humanli</h1>
+		<br>
 		<h3>Spring 2021</h3>
+		<br>
 		
 		<img src="humanliLogo.png" alt="engageliLogo" width="50%" style="display:block;margin-left:auto;margin-right:auto">
+		<br><br>
 		
 		<p><b>What is Engageli?</b><br><br>Engageli is a digital learning platform focused on creating a better experience for students and teachers working remotely.  The platform aims to provide higher education institutions with an innovative learning model that capitalizes on already-existing tools and monitors student engagement in real time. </p>
 		
 		<img src="engageli.png" alt="engageli" width="80%" style="display:block;margin-left:auto;margin-right:auto">
+		<br><br>
 		
 		<p><b>Who is Humanli?</b><br><br>The cross-functional team, called Humanli, was made up of 6 students at Tufts University with highly qualified and diverse backgrounds.</p><br>
 		
 		<p><b>Problem & Scope</b><br><br>Engageli is a new platform and is trying to define their space in remote learning. Humanli worked to identify room for improvement in the interface and what functions are seen as most valuable by users.<br><br>In this project, we will explored what users like and dislike about the Engageli for teachers platform and ways that it can be improved to fit the user’s interests. The interface that we started with is shown below.</p><br>
 		
+		<br>
 		<div id="expectationsHypothesisEtc">
 			<div>
 				<img src="engageliUi.png" width="100%">
 			</div>
 			<div class="rightText">
-				<br>
-				<b>Expectations</b>
+				<b>Expectations</b><br><br>
 				<ul>
 					<li>Unclear whether to design a new feature for Engageli or rearrange the current structure.</li>
 					<li>Focused on teacher side of the platform.</li>
 				</ul>
-				<b>Objectives</b>
+				<br><b>Objectives</b><br><br>
 				<ul>
 					<li>Examined the Engageli platform and identify opportunities for improvements based on a human factors analysis.</li>
 					<li>Structure the layout of the app to make locating features as intuitive as possible.</li>
 				</ul>
-				<b>Hypothesis</b>
+				<br><b>Hypothesis</b><br><br>
 				<ul>
 					<li>By restructuring the layout of features in Engageli, we believed that users would be able to navigate through the platform more efficiently.</li>
 				</ul>
-				<b>Task Challenges</b>
+				<br><b>Task Challenges</b><br><br>
 				<ul>
 					<li>Project goal - We initially approached this project without a strong direction. Through user research and usability testing, we decided that we wanted to address the layout of the features on the platform.</li>
 					<li>Time zones - While most of our team was on East coast time, we had one member of our team in Asia.  We had to accommodate our meetings for this time difference.</li>
@@ -113,6 +154,7 @@
 			<p>The best way to figure out if online learning is effective & engaging is by measuring student engagement through evaluation (ex. polls, quizzes, etc.)</p>
 		</div>
 		
+		<br>
 		<div id="userPersonas">
 			<p><b>User Personas</b><br><br>As part of our research, we developed three user personas to represent our target demographic of educators looking to improve their online learning experience.</p>
 			<img src="engageliUsers.png" alt="engageliUsers" width="80%" style="display:block;margin-left:auto;margin-right:auto">
@@ -123,17 +165,23 @@
 		<div id="compAnalysis">
 			<div class="leftText">
 				<p><b><br>Competative Analysis</b><br><br>As part of our research, we reviewed similar platforms to find out what features were popular or most beneficial.</p>
+				<br>
 				<b>Zoom</b>
+				<br><br>
 				<ul>
 					<li>PROS: familiar, intuitive, waiting rooms, view up to 49 people, polls, annotating screen, 1000 people max</li>
 					<li>CONS: security, tiered pricing, time limit, low audio quality on mobile</li>
 				</ul>
+				<br>
 				<b>Google Meet</b>
+				<br><br>
 				<ul>
 					<li>PROS: livestream meetings (100,000+ viewers), secure, integration with Google and Microsoft apps</li>
 					<li>CONS: pay for more security & participants, max meeting size: 250 </li>
 				</ul>
+				<br>
 				<b>Microsoft Teams</b>
+				<br><br>
 				<ul>
 					<li>PROS: Integration with Microsoft apps, chat is saved after calls</li>
 					<li>CONS: Need Microsoft account to create meetings (but not to join)</li>
@@ -145,10 +193,12 @@
 			</div>
 		</div>
 		
+		<br><br>
 		<div id="taskAnalysis">
 			<p><b>Task Analysis</b><br><br>As part of our research, we ran a task analysis on our users by conducting cognitive walkthroughs with the existing platform. From this, we found that users struggled with identifying the timer, understanding how to pin windows, distinguishing the difference between the chat and Q&A windows, and finding the 'End Class' button.</p>
 		</div>
 		
+		<br>
 		<div id="heuristicEval">
 			<p><b>Heuristic Evaluation</b><br><br>Next, we conducted a heuristic evaluation using Nielsen's 10 Usability Heuristics. We rated the interface on a scale of 1-7 on its ability to adhere to each heuristic. Through this, we were able to find several opportunities for improvement:</p>
 			<ul>
@@ -159,18 +209,22 @@
 			</ul>
 		</div>
 		
+		<br>
 		<div id="questionnaires">
 			<p><b>Questionnaires</b><br><br>We conducted two questionnaires to gather information from both teachers and students about what they look for in a remote learning platform.</p>
-			<p>We had 10 teacher respondents. Of these teachers, most used Zoom, and the average class size was 75 students. Of these students, teachers reported that about 45% of students had their cameras on during class. Teachers also explained their desire for more engagement, specifically in larger classes, since smaller classes had higher engagement.<br><br>Questionnaire results are included below.</p>
-			<img src="teachersQ.png" alt="teacherResults" width="80%" style="display:block;margin-left:auto;margin-right:auto">
-			<p>We had 8 students respond to our survey. Students reported that about 75% of professors were "somewhat skilled" in classroom technology. About 50% of students claimed to have their cameras on 50% of the time, 12.5% students had their cameras on most of the time, and 37.5% of students reported having their camera on less than half of the time. Students also reported their peers' participation as below medium.<br><br>Questionnaire results are included below.</p>
+			<p>We had 10 teacher respondents. Of these teachers, most used Zoom, and the average class size was 75 students. Of these students, teachers reported that about 45% of students had their cameras on during class. Teachers also explained their desire for more engagement, specifically in larger classes, since smaller classes had higher engagement.<br><br>Questionnaire results are included below.</p><br>
+			<img src="teachersQ.png" alt="teacherResults" width="80%" style="display:block;margin-left:auto;margin-right:auto"><br>
+			<p>We had 8 students respond to our survey. Students reported that about 75% of professors were "somewhat skilled" in classroom technology. About 50% of students claimed to have their cameras on 50% of the time, 12.5% students had their cameras on most of the time, and 37.5% of students reported having their camera on less than half of the time. Students also reported their peers' participation as below medium.<br><br>Questionnaire results are included below.</p><br>
 			<img src="studentQ.png" alt="studentResults" width="80%" style="display:block;margin-left:auto;margin-right:auto">	
 		</div>
 		
 		
 		<div id="solution">
+			<br>
 			<p><b>User Needs</b><br><br>Based on our research, we created a list of user needs and used those needs to influence the creation of specific user requirements. </p>
-			<img src="eH_UserNeedsReqs.png" alt="studentResults" width="80%" style="display:block;margin-left:auto;margin-right:auto">	
+			<br>
+			<img src="eH_UserNeedsReqs.png" alt="userNeeds" width="80%" style="display:block;margin-left:auto;margin-right:auto">	
+			<br>
 		</div>
 		<br>
 		
@@ -179,12 +233,13 @@
 				<img src="initialWireframe.png" width="100%">
 			</div>
 			<div class="rightText">
-				<p><b>Initial Wireframe</b><br><br>We used these needs & requirements as guidance when we created our initial wireframe on Figma, which is shown on the right. We focused on making sure that all functionality was clearly labeled, such as the engagement and happiness measurements.We also labeled the toggles between table and gallery view, and we moved the end class functionality from a drop down menu to its own button, since that was one major issue we found in the original interface. <br><br>To test the effectiveness of our improvements, we ran usability tests on our wireframe.</p>
+				<p><b>Initial Wireframe</b><br><br>We used these needs & requirements as guidance when we created our initial wireframe on Figma, which is shown on the right. We focused on making sure that all functionality was clearly labeled, such as the engagement and happiness measurements.We also labeled the toggles between table and gallery view, and we moved the end class functionality from a drop down menu to its own button, since that was one major issue we found in the original interface. <br><br>To test the effectiveness of our improvements, we ran usability tests on our wireframe.</p><br><br>
 			</div>
 		</div>
 		<div id="solutionInforming">
 			<div class="leftText">
-				<br><b>Usability Tests</b><p>We ran usability tests with 6 remote participants on our Figma wireframe. Some of the key tasks we asked users to complete were:
+				<br><b>Usability Tests</b><br><br><p>We ran usability tests with 6 remote participants on our Figma wireframe. Some of the key tasks we asked users to complete were:
+				<br><br>
 				<ul>
 					<li>Screen sharing</li>
 					<li>Toggling between table and gallery view</li>
@@ -202,7 +257,8 @@
 		<div id="finalDesign">
 			<p>In these usability tests, we found some remaining confusion around the timer, the difference between galleries and tables, how to pin a window, and the engagement and happiness metrics. We used this confusion to drive our iterative design recommendations.</p>
 			
-			<p><b>Final Design</b><br><br>Our final design was largely informed by the usability tests that we ran on the initial prototype.
+			<br>
+			<p><b>Final Design</b><br><br>Our final design was largely informed by the usability tests that we ran on the initial prototype.<br><br>
 			<ul>
 				<li>We changed the happiness and engagement metrics to be more distinct and easier to understand.</li>
 				<li>We labeled the timer.</li>
@@ -210,6 +266,7 @@
 				<li>We rearranged the top menu to fit better with our new scales and other functionality, so the drop down menu was at the end, where users would expect it to be.</li>
 				<li>Finally, we polished the look and feel of our design to more closely fit with the current Engageli interface.</li>
 			</ul>
+			<br>
 			The image below emphasizes these changes, and our final wireframes are included below.
 			</p>
 			<img src="changes.png" alt="changes" width="80%" style="display:block;margin-left:auto;margin-right:auto">	
@@ -220,7 +277,7 @@
 		</div>
 	
 		<div id="nextSteps">
-			<p><b>Next Steps</b><br><br>Our next steps in this project would be to implement our changes and further evaluate their effectiveness. After that, we would continue to iterate on our design and keep it updated and fresh with standards and other popular platforms to remain a competitive option.</p><br>
+			<p><b>Next Steps</b><br><br>Our next steps in this project would be to implement our changes and further evaluate their effectiveness. After that, we would continue to iterate on our design and keep it updated and fresh with standards and other popular platforms to remain a competitive option.</p><br><br>
 		</div>
 	</div>
 	</article>

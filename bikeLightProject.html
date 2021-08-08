@@ -39,30 +39,68 @@
 			}
 		}
 	</style>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="nav.js"></script>
+	
 </head>
 
 <body>
+	
 	<header>
-		<div class="container">
-			<div id="name">
-				<h1>Margaret Cook</h1>
-			</div>
-			
-			<nav>
-				<ul>
-					<li><a href="https://margaretkcook.github.io/margaretCook/index">Home</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="portfolio.html"><b>Portfolio</b></a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <nav>
+      <div class="name">
+        <a href="index.html">MARGARET COOK</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="resume.html"> Resume </a>
+        <div class="dropdown">
+          <a class="drop-area" href="portfolio.html"><b>Portfolio</b></a>
+          <div class="dropdown-content">
+			  <a href="uxhfe.html"><b>Human Factors & User Experience</b></a>
+            <a href="VRDev.html"> VR Development </a>
+			<a href="websites.html"> Software & Web Development</a>
+          </div>
+        </div>
+      </div>
+      <div class="burger" id="lines">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="index.html" class="close-nav"> Home </a>
+    <a href="resume.html" class="close-nav"> Resume </a>
+    <a class="side-drop-btn" href="#">
+      <b>Portfolio</b>
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+	  <a href="portfolio.html" class="close-nav"> Portfolio Home </a>
+		<a href="uxhfe.html" class="close-nav"><b>Human Factors & User Experience</b></a>
+      <a href="VRDev.html" class="close-nav"> VR Development </a>
+	  <a href="websites.html" class="close-nav"> Software & Web Development </a>
+    </div>
+  </div>
 	
 	<article id="bikeLightProject">
 	<div class="container">
+		
+		<br>
+		<a href="index.html">Home</a> / <a href="portfolio.html">Portfolio</a> / <a href="uxhfe.html">Human Factors & User Experience</a> / <a href="bikeLightProject.html">Bike Light Project</a>
+		<br>
+		
+		<br>
 		<h1>Bike Light Project</h1>
+		<br>
 		<h3>Spring 2020</h3>
 		
+		<br>
 		<p><b>Objectives</b><br><br>One of the largest contributing factors to bike accidents is a lack of bike light usage. This project created system to increase bike light usage on college campuses and in surrounding communities, specifically in the context of Tufts University.</p>
 		<br>
 		<br>
@@ -71,6 +109,7 @@
 				<img src="blData.png" width="100%">
 			</div>
 			<div class="rightText">
+				<br>
 				<p><b>Data and User Research</b><br><br>We focused on using the user centered design process as a basis for our system for solution to helping students bike safer. So, we started with a survey to better understand our target demographic, why they were not using bike lights, and how we could better cater to their needs. We focused on Tufts students, since we were able to access a sizeable population of the students to take our Qualtrics survey, but this research could be conducted on any college campus. </p>
 			</div>
 		</div>
@@ -88,8 +127,9 @@
 			<p><b>Comparison Research</b><br><br>We then focused on comparing our system to other existing systems. There ar several organizations, such as MassBike, that help inform people about bike safety and distribute bike lights. There are also some colleges that hold events to distribute bike lights, which have been effective in making sure that students are provided free bike lights. We then compared all of these in our House of Quality to our own proposed solution and user needs and engineering requirements. </p>
 		</div>
 		
+		<br><br>
 		<div id="solution">
-			<p><b>Our Solution</b><br><br>We came to our solution by using a decision matrix to find how our system catered to our user needs. We came up with a few different basic solutions and then scored them based on how the measured up to what our users were looking for. Among these were an idea to design a new bike light or have a system for users to come check bike lights out from the Tufts library, but we ultimately decided on a system that would distribute free lights at the Tufts Campus Center. The second part of our plan was an emphasis on informing users on the importance of using their new bike light. </p>
+			<p><b>Our Solution</b><br><br>We came to our solution by using a decision matrix to find how our system catered to our user needs. We came up with a few different basic solutions and then scored them based on how the measured up to what our users were looking for. Among these were an idea to design a new bike light or have a system for users to come check bike lights out from the Tufts library, but we ultimately decided on a system that would distribute free lights at the Tufts Campus Center. The second part of our plan was an emphasis on informing users on the importance of using their new bike light. </p><br>
 		</div>
 		
 		<div id="solutionLights">
@@ -97,11 +137,13 @@
 				<img src="lightMap.png" width="100%">
 			</div>
 			<div class="rightText">
+				<br><br>
 				<p>The first focus of our plan was distribution. We used an existing map of biking resources at Tufts and demonstrated how easy it could be to add a resource for students to find free bike lights. Through this system, users could come to the Tufts Campus Center during the weeks at the beginning of the fall semester and shortly after spring break to collect free bike lights. The booth distributing the bike lights could be run by the Tufts Bikes Club with the Tufts Police Department (TUPD). This plan would also contribute to the second part of our solution, which is informing the user.</p>
 			</div>
 		</div>
 		<div id="solutionInforming">
 			<div class="leftText">
+				<br>
 				<p>The second part of our solution was an emphasis on informing users on the importance of using their bike lights. The signs and flyers shown are the ones that we designed to hang around campus and display at intersections to remind people how important it is that they use the lights for the safety of bikers, drivers, and pedestrians as well. </p>
 			</div>
 			<div>

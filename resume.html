@@ -45,26 +45,57 @@
 	}
 	
 </style>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="nav.js"></script>
+	
 </head>
 
 <body>
 	<header>
-		<div class="container">
-			<div id="name">
-				<h1>Margaret Cook</h1>
-			</div>
-			
-			<nav>
-				<ul>
-					<li><a href="https://margaretkcook.github.io/margaretCook/index">Home</a></li>
-					<li><a href="resume.html"><b>Resume</b></a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <nav>
+      <div class="name">
+        <a href="index.html">MARGARET COOK</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"> Home </a>
+        <a href="resume.html"><b>Resume</b></a>
+        <div class="dropdown">
+          <a class="drop-area" href="portfolio.html"> Portfolio </a>
+          <div class="dropdown-content">
+            <a href="uxhfe.html"> Human Factors & User Experience </a>
+            <a href="VRDev.html"> VR Development </a>
+			<a href="websites.html"> Software & Web Development</a>
+          </div>
+        </div>
+      </div>
+      <div class="burger" id="lines">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="index.html" class="close-nav"> Home </a>
+    <a href="resume.html" class="close-nav"><b>Resume</b></a>
+    <a class="side-drop-btn" href="#">
+      Portfolio
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+	  <a href="portfolio.html" class="close-nav"> Portfolio Home </a>
+      <a href="uxhfe.html" class="close-nav"> Human Factors & User Experience </a>
+      <a href="VRDev.html" class="close-nav"> VR Development </a>
+	  <a href="websites.html" class="close-nav"> Software & Web Development </a>
+    </div>
+  </div>
+
 	
 	<div class="container">
+	<br>
 		
 	<div class="pageContainer">
 		<div class="left">
@@ -124,6 +155,7 @@
 	</div>
 		
 	</div>
+	<br>
 	
 	<footer>
 		<div class="container">

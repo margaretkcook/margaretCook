@@ -11,49 +11,80 @@
 		}
 		.project{
 			align-content: center;
-			border: solid 2px #BBB;
 		}
 		.project a{
 			text-decoration:none;
 			color: #000000;
 		}
 		.project:hover{
-			border: solid 2px #000;
+			border: solid 2px #BBBBBB;
 		}
 		@media (max-width:768px) {
 		.projects{
 			display:block;
 		}
 	</style>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="nav.js"></script>
+	
 </head>
 
 <body>
+	
 	<header>
-		<div class="container">
-			<div id="name">
-				<h1>Margaret Cook</h1>
-			</div>
-			
-			<nav>
-				<ul>
-					<li><a href="https://margaretkcook.github.io/margaretCook/index">Home</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="portfolio.html"><b>Portfolio</b></a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <nav>
+      <div class="name">
+        <a href="index.html">MARGARET COOK</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="resume.html"> Resume </a>
+        <div class="dropdown">
+          <a class="drop-area" href="portfolio.html"><b>Portfolio</b></a>
+          <div class="dropdown-content">
+			  <a href="uxhfe.html"><b>Human Factors & User Experience</b></a>
+            <a href="VRDev.html"> VR Development </a>
+			<a href="websites.html"> Software & Web Development</a>
+          </div>
+        </div>
+      </div>
+      <div class="burger" id="lines">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="index.html" class="close-nav"> Home </a>
+    <a href="resume.html" class="close-nav"> Resume </a>
+    <a class="side-drop-btn" href="#">
+      <b>Portfolio</b>
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-container">
+	  <a href="portfolio.html" class="close-nav"> Portfolio Home </a>
+		<a href="uxhfe.html" class="close-nav"><b>Human Factors & User Experience</b></a>
+      <a href="VRDev.html" class="close-nav"> VR Development </a>
+	  <a href="websites.html" class="close-nav"> Software & Web Development </a>
+    </div>
+  </div>
 	
 	<div class="container">
 		
+		<br>
 		<h1 style="text-align:center">Human Factors & User Experience</h1>
+		<br>
 		
 		<p style="text-align:center">These projects demonstrate my use of the user-centered design process to conduct research and create effective solutions. Click on a project to learn more!</p> <br>
 		
 		<div class="projects">
 			<div class="project">
 				<a href="deviceHolder.html" style="text-align:center">
-					<h2 style="text-transform: uppercase">Device Holder for Musicians & App</h2>
+					<h2 style="text-transform: uppercase"><br>Device Holder for Musicians & App</h2>
 					<img src="device_stand.png" alt="deviceStand" width="100%">
 					<p>SPRING 2021<br><br> Designed, prototyped, and conducted usability testing for a device holder and accompanying app wireframe that was created for musicians to attach it to a music stand</p>
 				</a>
@@ -61,7 +92,7 @@
 		
 			<div class="project">
 				<a href="engageli-humanli.html" style="text-align:center">
-					<h2 style="text-transform: uppercase">Engageli - Humanli</h2><br>
+					<h2 style="text-transform: uppercase"><br>Engageli - Humanli</h2><br>
 					<img src="humanliLogo.png" alt="engageliLogo" width="100%">
 					<p>SPRING 2021<br><br> Collaborated with a team to improve the usability of Engageli, a remote learning platform, by conducting research and designing a wireframe to communicate suggested changes</p>
 				</a>
@@ -72,7 +103,7 @@
 			
 			<div class="project">
 				<a href="bikeLightProject.html" style="text-align:center"> 
-					<h2 style="text-transform: uppercase">Bike Light Project</h2><br>
+					<h2 style="text-transform: uppercase"><br>Bike Light Project</h2><br>
 					<img src="bikeLightProject.png" alt="BikeLightProjectVisuals" width="100%">
 					<p>SPRING 2020<br><br> Exercised the user centered design process to find a solution to increasing the use of bike lights on Tufts campus</p>
 				</a>
