@@ -18,11 +18,6 @@ header{
 	overflow: hidden;
 }
 
-.logo {
-    width: 300px;
-    cursor: pointer;
-}
-
 .name a{
 	color: #FFFFFF;
 	text-decoration: none;
